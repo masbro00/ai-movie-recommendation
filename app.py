@@ -105,7 +105,7 @@ def load_data():
 
 @st.cache_data
 def fetch_poster(movie_id):
-    if not TMDB_API_KEY or TMDB_API_KEY == "MASUKKAN_API_KEY_KAMU_DISINI":
+    if not TMDB_API_KEY or TMDB_API_KEY == "ec237bf1a962fd7fab013527c9586e6e":
         return None
     try:
         url = f"https://api.themoviedb.org/3/movie/{int(movie_id)}?api_key={TMDB_API_KEY}&language=en-US"
